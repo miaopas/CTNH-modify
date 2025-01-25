@@ -1,0 +1,127 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "36A2F40CC894ECAF"
+	group: "71414D2BDE140EDA"
+	icon: "minecraft:zombie_head"
+	id: "36A2F40CC894ECAF"
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			id: "70EEEE7E5F39EDCC"
+			subtitle: "利用精准采集II的工具可以采集获得"
+			tasks: [{
+				id: "2616D43437FC37B5"
+				item: "minecraft:spawner"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			id: "6FE01122768E1589"
+			subtitle: "直接破坏刷怪笼只能获得这个"
+			tasks: [{
+				id: "4AE8AC74093BE52E"
+				item: {
+					Count: 1
+					id: "enderio:broken_spawner"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6FE01122768E1589"]
+			id: "70775BD37338408D"
+			subtitle: "先将破损的刷怪笼绑定好某一种生物后，再合成电动刷怪笼"
+			tasks: [{
+				id: "3F32EA5E2AFEEC1A"
+				item: {
+					Count: 1
+					id: "enderio:powered_spawner"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["70775BD37338408D"]
+			id: "61B334D440F18D22"
+			subtitle: "这个可快了 "
+			tasks: [{
+				id: "75465FA6FC7030ED"
+				item: "ctnhcore:slaughter_house"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["179E506375B19B66"]
+			id: "68DFFB39CC7CEB6C"
+			tasks: [{
+				id: "57F28CEA58D28E36"
+				item: "ars_nouveau:drygmy_charm"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			id: "22D529C3C7916152"
+			subtitle: "从荒野猎手身上获得"
+			tasks: [{
+				id: "055DD47287274E3E"
+				item: "ars_nouveau:wilden_horn"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["22D529C3C7916152"]
+			description: ["将荒野之角扔给它们，它们就会变为碎片。"]
+			id: "179E506375B19B66"
+			subtitle: "去森林里找到这种小家伙"
+			tasks: [{
+				id: "105B12B42E2BE41A"
+				item: "ars_nouveau:drygmy_shard"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"68DFFB39CC7CEB6C"
+				"2E48E824DE4E530B"
+			]
+			id: "466E245F021E7FFE"
+			subtitle: "阅读新生魔艺的指南，打造一个高效刷怪场吧！"
+			tasks: [{
+				id: "6D79914F4BB39979"
+				title: "德格米牧场"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			id: "2E48E824DE4E530B"
+			tasks: [{
+				id: "60ED99C820ACF885"
+				item: "ars_nouveau:mob_jar"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+	]
+	title: "怪物资源"
+}

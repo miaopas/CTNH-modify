@@ -1,0 +1,6 @@
+{
+    "fluid": "gtceu:seed_oil",
+    "burnTime": 128,
+    "superHeat": false,
+    "amountConsumedPerTick": 1
+}

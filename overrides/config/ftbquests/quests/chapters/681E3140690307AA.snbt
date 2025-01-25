@@ -1,0 +1,542 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "681E3140690307AA"
+	group: ""
+	icon: "minecraft:oak_log"
+	id: "681E3140690307AA"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "44C7FE559ECFB2EB"
+			shape: "gear"
+			size: 3.0d
+			subtitle: "本整合包目前处于内测状态，许多机制未完善，请酌情游玩，如有建议欢迎提出"
+			tasks: [{
+				id: "5CE79CE60BD5FC4D"
+				title: "欢迎"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["44C7FE559ECFB2EB"]
+			description: [
+				"    在本整合包中，添加了冷汗模组，温度会随着&a群系、季节、维度、周围的方块&r变化而变化。&4过高和过低的温度都会导致危险&r，所以请时刻注意自身的温度情况，别忘了制作温度计哦。更多信息请前往“冷汗”章节。"
+				"    别怪我没提醒你，冬天会很冷的。"
+			]
+			icon: "cold_sweat:thermometer"
+			id: "5C2320A3B3E10E11"
+			rewards: [{
+				id: "118E14A8F73D99ED"
+				item: {
+					Count: 1
+					id: "kubejs:broken_temperature_keeping_device"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "重要！！！"
+			tasks: [{
+				id: "1769E6600040B278"
+				title: "冷汗"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["44C7FE559ECFB2EB"]
+			icon: "gtceu:gregification_hazard_sign_block"
+			id: "6709D9DF2EA0432B"
+			subtitle: "格雷科技是本整合包的主线科技，也许你曾听说过它的大名，但是不要担心，只要一步一步遵循任务线进行，一定能给你带来一个良好的游戏体验！"
+			tasks: [{
+				id: "0159C516B579DCAF"
+				title: "格雷科技"
+				type: "checkmark"
+			}]
+			title: "格雷科技（GT）"
+			x: -10.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["44C7FE559ECFB2EB"]
+			hide_dependency_lines: false
+			icon: "create:wrench"
+			id: "6E097A8CDC0BF608"
+			subtitle: "没错，就是它"
+			tasks: [{
+				id: "09D536FDA05E00B8"
+				title: "机械动力"
+				type: "checkmark"
+			}]
+			x: -11.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["44C7FE559ECFB2EB"]
+			icon: "botania:livingrock"
+			id: "39CA84C1EBF5FF02"
+			subtitle: "一个很棒的魔法模组，会融入主线之中"
+			tasks: [{
+				id: "3779765761C83EA7"
+				title: "植物魔法"
+				type: "checkmark"
+			}]
+			x: -7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["44C7FE559ECFB2EB"]
+			icon: "bloodmagic:daggerofsacrifice"
+			id: "021CE5551CB203F9"
+			subtitle: "同样是很棒的模组，也会融入主线之中"
+			tasks: [{
+				id: "5573A2DD9A403E16"
+				title: "血魔法"
+				type: "checkmark"
+			}]
+			x: -10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["44C7FE559ECFB2EB"]
+			description: ["如果你想要GT连锁，你可以在目录找到config，并修改ctnhcore文件，将true改成false就可以进行格雷矿物的连锁了"]
+			id: "4B11E32ACA7BC6FA"
+			subtitle: "慢慢地探索吧"
+			tasks: [{
+				id: "6344812C1EC2C585"
+				title: "还有更多"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["09C344717F4BAD6C"]
+			id: "6F405D2508EED283"
+			rewards: [{
+				count: 64
+				id: "3DAAAA2A3D113E16"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "737374C23974ABF8"
+				item: { Count: 16, id: "minecraft:cobblestone" }
+				type: "item"
+			}]
+			x: -3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6F405D2508EED283"]
+			description: [
+				"晚上会特别的冷，建议你提前搞点皮革"
+				"由于加入了冷汗mod，皮革套装现在变得非常有用"
+			]
+			id: "611BCC64F1F511AA"
+			optional: true
+			rewards: [
+				{
+					id: "38900AA3B17D11BB"
+					item: {
+						Count: 1
+						id: "minecraft:leather_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5AD1847BC349708E"
+					item: {
+						Count: 1
+						id: "minecraft:leather_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5BA9DB98DB8DDD0D"
+					item: {
+						Count: 1
+						id: "minecraft:leather_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3734736264B0B488"
+					item: {
+						Count: 1
+						id: "minecraft:leather_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "你需要一些保护"
+			tasks: [{
+				count: 4L
+				id: "2B699EAFD14FE1D7"
+				item: { Count: 4, id: "minecraft:leather" }
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6F405D2508EED283"]
+			description: ["格雷修改了原版的所有矿物生成，&4贸然的下矿会让你一无所获&r。使用探矿仪，找到含有铁、铜、锡等前期金属的矿脉，探矿仪中的数值表示该区块内含有这种矿物的总数量，&a而矿物生成的y轴请查看jei&r。在对应区块寻找矿物，效率会高很多。有时候你会在地面上找到一些&a矿石标记物&r，别犹豫，下面也许就是大片的矿石！"]
+			id: "1B4FFE71B4C66E14"
+			rewards: [
+				{
+					id: "041A24BFFAF6E5F1"
+					item: {
+						Count: 1
+						id: "gtceu:prospector.lv"
+						tag: {
+							Charge: 100000
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "63706A0B750DCFD1"
+					item: {
+						Count: 1
+						id: "gtceu:rose_gold_mining_hammer"
+						tag: {
+							DisallowContainerItem: 0b
+							Enchantments: [{
+								id: "minecraft:fortune"
+								lvl: 2s
+							}]
+							GT.Behaviours: {
+								AoEColumn: 1
+								AoELayer: 0
+								AoERow: 1
+								MaxAoEColumn: 1
+								MaxAoELayer: 0
+								MaxAoERow: 1
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 2303
+								ToolSpeed: 8.8f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2
+					id: "3D2861D84C925025"
+					item: {
+						Count: 1
+						id: "apotheosis:potion_charm"
+						tag: {
+							Damage: 0
+							Potion: "minecraft:night_vision"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "336B11DEECD4272E"
+					item: {
+						Count: 1
+						id: "sophisticatedbackpacks:gold_backpack"
+						tag: {
+							inventorySlots: 81
+							upgradeSlots: 3
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "别随便下矿洞！"
+			tasks: [{
+				id: "02CB7B2250363B17"
+				title: "下矿"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6F405D2508EED283"]
+			description: [
+				"建议你早点考虑吃喝，生活调味料给你补充的红心会让你舒服不少"
+				"早点弄一下农夫乐事，一直吃低饱和度的食物没有意义"
+			]
+			id: "4157A965AA4E18D2"
+			rewards: [
+				{
+					count: 16
+					id: "429080A5C2A4BE82"
+					item: "minecraft:wheat"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "4EB177EA54EF6910"
+					item: "minecraft:potato"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "67A631D40E83AEF4"
+					item: "minecraft:carrot"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 16L
+				id: "6ACD95E8150EA4EC"
+				item: "minecraft:wheat_seeds"
+				type: "item"
+			}]
+			title: "种田"
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1B4FFE71B4C66E14"]
+			description: ["不一定非要挖相同的矿石，此任务仅起到指示作用"]
+			icon: "gtceu:raw_magnetite"
+			id: "6639C6A3A5807AED"
+			optional: true
+			subtitle: "一些前期需要的矿石"
+			tasks: [
+				{
+					count: 16L
+					id: "572CAD4F00EDE86F"
+					item: { Count: 16, id: "gtceu:raw_pyrite" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "44D72C7C2A7340A3"
+					item: { Count: 16, id: "gtceu:raw_chalcopyrite" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "40CB9F4CCC5676E3"
+					item: { Count: 16, id: "gtceu:raw_cassiterite" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "44084C15D291F6BC"
+					item: { Count: 16, id: "minecraft:raw_iron" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0252284CC227D88B"
+					item: { Count: 16, id: "gtceu:raw_malachite" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "3427782A2B758FA8"
+					item: "gtceu:raw_magnetite"
+					type: "item"
+				}
+			]
+			title: "矿物"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1B4FFE71B4C66E14"]
+			icon: "minecraft:iron_ingot"
+			id: "5BA86B01337A91D5"
+			subtitle: "整合包里最没用的一些东西"
+			tasks: [
+				{
+					count: 16L
+					id: "22D98D01343215B0"
+					item: { Count: 16, id: "minecraft:iron_ingot" }
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "7FA9438D1DF9D76E"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+			]
+			title: "矿物锭"
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"27C30CC438658E3E"
+				"337BC9186C014A06"
+			]
+			id: "09C344717F4BAD6C"
+			subtitle: "做这东西花了我老半天"
+			tasks: [{
+				id: "58CDFF594C3E0249"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["44C7FE559ECFB2EB"]
+			id: "27C30CC438658E3E"
+			rewards: [{
+				count: 4
+				id: "18328F48D1E17C33"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			subtitle: "有很多你熟悉的东西需要燧石来合成"
+			tasks: [{
+				count: 4L
+				id: "4F80DC03536AE638"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["611BCC64F1F511AA"]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "04FBFEEE00051A74"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "75D0E80D02D3516B"
+					item: "minecraft:string"
+					type: "item"
+				}
+				{
+					id: "10F8762EB24C04B7"
+					item: "minecraft:chest"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "36E42458DAA32682"
+					item: "minecraft:leather"
+					type: "item"
+				}
+			]
+			subtitle: "不可或缺！"
+			tasks: [{
+				id: "123796D65339C390"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "curios:back"
+					}
+				}
+				title: "Any #curios:back"
+				type: "item"
+			}]
+			title: "挖矿必备！"
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["5BA86B01337A91D5"]
+			description: [
+				"早期安山合金的合成很昂贵，可以省着使用，后面会有更便宜的制作方式，注意查看jei."
+				"&a你的第一块合金，同时也是开启机械动力的钥匙&r"
+			]
+			id: "7FA90252C6CC19F0"
+			rewards: [{
+				count: 16
+				id: "3531E484EFE0DA86"
+				item: "gtceu:andesite_alloy_ingot"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "第一块合金"
+			tasks: [{
+				id: "19245BF7A4D48BFB"
+				item: "gtceu:andesite_alloy_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["44C7FE559ECFB2EB"]
+			description: ["每一个伟大的梦想，都起源于一个微不足道的开始"]
+			id: "337BC9186C014A06"
+			tasks: [{
+				id: "53BD9501D90EA729"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "Any #minecraft:logs"
+				type: "item"
+			}]
+			title: "要致富，先撸树"
+			x: -7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["09C344717F4BAD6C"]
+			description: ["许多物品的配方可能与原版发生了一些变动，请大家在游玩时注意多查看jei。同时，对于科技包的新手，每一个任务的描述都是十分重要的，可以&a帮助你更快理解游戏的基本玩法和流程&r，也请大家多多关注！"]
+			id: "1FB23D66088398BC"
+			tasks: [{
+				id: "519EA59FDB4B479F"
+				title: "多查看JEI"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			description: [
+				"    如你所见，目前整合包的内容&c还有相当多不完整的地方&r，目前的开发组主力只有两位在校大学生，平时时间也不会太多，而且大量的时间花在新机制、新多方块、新产线的设计上，这也导致&c整合包的任务、美工、建筑等方面的不足&r。"
+				"    如果你有一定的美术天赋，或者对哪些物品的材质有想法或者不满意，可以加群或者联系作者提供你的作品。如果你对整合包流程十分熟悉，觉得作者现在写的任务不合理，也可以使用github提供你的修改（&a任务的编辑是可视化的界面，简单易上手，相信你一定能够做好&r）。"
+				"    最后，哪怕你啥也不会，但是有很多新奇的点子，也随时欢迎你加群和大家交流或者提供给作者，每个人的创意都是独一无二的，相信你的创意也可以得到大家的支持。如果你对这些都没有兴趣，那么，请尽情享受本整合包吧！"
+			]
+			id: "5F126DE1A7F425DA"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "686C86F01CDB3AD7"
+				title: "欢迎加入共创计划！"
+				type: "checkmark"
+			}]
+			x: -9.0d
+			y: 6.0d
+		}
+	]
+	title: "原始人，起洞！！"
+}
