@@ -128,12 +128,44 @@ ServerEvents.recipes(event => {
 
       B: "#gtceu:circuits/hv",
 
-      C: "createutilities:void_steel_sheet",
+      C: "gtceu:double_black_steel_plate",
 
       D: 'gtceu:hv_machine_casing'
     }
   )
-  
+
+  event.recipes.create.mechanical_crafting('gtceu:nan_certificate',[
+    "ABBCCCBBA",
+    "BDEFGFEDB",
+    "BEHIJIHEB",
+    "CKIJLJIMC",
+    "CNJOPOJNC",
+    "CKIJQJIMC",
+    "BEHIJIHEB",
+    "BDERGREDB",
+    "ABBCCCBBA"
+  ],
+    {
+      A: "gtceu:uhv_sensor",
+      B: "gtceu:uhv_electric_pump",
+      C: "gtceu:uhv_electric_motor",
+      D: 'gtmthings:uhv_wireless_energy_receive_cover',
+      E: "gtceu:elementium_gear",
+      F: "ars_nouveau:summon_focus",
+      G: "bloodmagic:reagentsuppression",
+      H: "gtceu:uhv_robot_arm",
+      I: "gtmthings:uhv_huge_dual_hatch",
+      J: "gtceu:gravi_star",
+      K: "cataclysm:cursium_ingot",
+      L: "bigger_ae2:quantum_item_storage_cell",
+      M: "cataclysm:ignitium_ingot",
+      N: "gtceu:ultra_mana_frame",
+      O: "gtceu:max_battery",
+      P: "gtceu:uhv_field_generator",
+      Q: "bigger_ae2:quantum_fluid_storage_cell",
+      R: "apotheosis:infused_breath"
+    }
+  )
 })
 
 //动力辊压机
@@ -265,7 +297,29 @@ ServerEvents.recipes(event => {
   ]).transitionalItem(transitional)
     .loops(1)
 })
-
+ServerEvents.recipes(event => {
+  let transitional = 'ctnhcore:high_strength_concrete'
+  event.recipes.create.sequenced_assembly([
+    'ctnhcore:sintering_kiln'
+  ], 'gtceu:steel_firebox_casing', [
+    event.recipes.createDeploying(transitional, [transitional, 'gtceu:steel_block']),
+    event.recipes.createDeploying(transitional, [transitional, 'ctnhcore:advanced_coke_oven']),
+    event.recipes.createDeploying(transitional, [transitional, 'gtceu:primitive_blast_furnace']),
+    event.recipes.createFilling(transitional, [transitional, Fluid.of('gtceu:creosote', 1000)])
+  ]).transitionalItem(transitional)
+    .loops(1)
+})
+ServerEvents.recipes(event => {
+  let transitional = 'minecraft:orange_stained_glass'
+  event.recipes.create.sequenced_assembly([
+    'ctnhcore:bronze_framed_glass'
+  ], 'minecraft:glass', [
+    event.recipes.createDeploying(transitional, [transitional, 'gtceu:bronze_tiny_fluid_pipe']),
+    event.recipes.createDeploying(transitional, [transitional, 'gtceu:bronze_rod']),
+    event.recipes.createDeploying(transitional, [transitional, 'gtceu:long_bronze_rod']),
+  ]).transitionalItem(transitional)
+    .loops(2)
+})
 ServerEvents.recipes(event =>{
   event.custom({
     "type": "create:sequenced_assembly",
@@ -403,7 +457,7 @@ ServerEvents.recipes(event => {
     event.recipes.createDeploying(transitional, [transitional, 'gtceu:gypsum_dust']),
     event.recipes.createFilling(transitional, [transitional, Fluid.of('gtceu:concrete', 250)])
   ]).transitionalItem(transitional)
-    .loops(4)
+    .loops(2)
   event.remove({ output: 'gtceu:firebricks' })
 })
 
@@ -422,8 +476,9 @@ ServerEvents.recipes(event => {
 
 //注液器
 ServerEvents.recipes(event => {
-  event.recipes.create.filling('cold_sweat:thermometer', ['kubejs:thermometer_case', Fluid.of('gtceu:mercury', 1000)])
-  event.remove({ output: 'cold_sweat:thermometer' })
+  event.recipes.create.filling('legendarysurvivaloverhaul:thermometer', ['kubejs:thermometer_case', Fluid.of('gtceu:mercury', 1000)])
+  event.remove({ output: 'legendarysurvivaloverhaul:thermometer' })
+  event.recipes.create.filling('2x ctnhcore:simple_nutritious_meal',['minecraft:paper',Fluid.of('gtceu:biomass',500)])
 })
 
 ServerEvents.recipes(event => {
@@ -452,7 +507,6 @@ ServerEvents.recipes(event => {
 
 ServerEvents.recipes(event => {
   event.recipes.create.item_application('create:shadow_steel_casing', ['minecraft:obsidian', 'gtceu:shadow_steel_plate'])
-  event.recipes.create.mixing('createutilities:void_steel_ingot', ['create:shadow_steel', 'gtceu:ender_pearl_dust']).superheated()
-  event.remove({ id: 'createutilities:mixing/void_steel_ingot' })
   event.recipes.create.mixing('4x create:chromatic_compound', [Fluid.of('minecraft:lava', 500), 'gtceu:netherite_dust', 'gtceu:andesite_alloy_ingot', 'create:polished_rose_quartz'])
+  event.recipes.create.mixing('5x minecraft:gold_nugget', [Fluid.of("gtceu:aqua_regia", 500), '2x gtceu:ochrum_dust'])
 })

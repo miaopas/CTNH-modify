@@ -1,0 +1,75 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0AD950C34ED565A4"
+	group: "71414D2BDE140EDA"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			Parent: {
+				temperature: 25.6f
+			}
+		}
+		id: "legendarysurvivaloverhaul:thermometer"
+	}
+	id: "0AD950C34ED565A4"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			id: "1559383C30926214"
+			tasks: [{
+				id: "2060F90A899AE198"
+				item: "legendarysurvivaloverhaul:cooling_coat_1"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			id: "0697046CBEB2EEE9"
+			tasks: [{
+				id: "03D52215105060C3"
+				item: "legendarysurvivaloverhaul:heating_coat_1"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			id: "10CC4F18FCD666F7"
+			tasks: [{
+				id: "18C35939ECACEDE6"
+				item: "legendarysurvivaloverhaul:thermal_coat_1"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			description: ["{ftbquests.chapter.0AD950C34ED565A4.quest4.description1}"]
+			id: "3DEACC2059BBDB47"
+			subtitle: "{ftbquests.chapter.0AD950C34ED565A4.quest4.subtitle}"
+			tasks: [{
+				id: "3A403EB9C65CA260"
+				title: "{ftbquests.chapter.0AD950C34ED565A4.quest4.task.title1}"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			description: ["{ftbquests.chapter.0AD950C34ED565A4.quest5.description1}"]
+			id: "35C275383AEEE23D"
+			subtitle: "{ftbquests.chapter.0AD950C34ED565A4.quest5.subtitle}"
+			tasks: [{
+				id: "533FDBC115480B2E"
+				title: "{ftbquests.chapter.0AD950C34ED565A4.quest5.task.title1}"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+	]
+	title: "{ftbquests.chapter.0AD950C34ED565A4.title}"
+}

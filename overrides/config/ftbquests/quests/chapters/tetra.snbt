@@ -1,0 +1,400 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tetra"
+	group: "71414D2BDE140EDA"
+	icon: "tetra:basic_workbench"
+	id: "1C74C871FF8892C6"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["72A10FB317A6D183"]
+			id: "2FB20A6A0C2938F4"
+			subtitle: "{ftbquests.chapter.tetra.quest1.subtitle}"
+			tasks: [{
+				id: "46BCB9EA2BAF39F7"
+				item: {
+					Count: 1
+					id: "tetra:modular_double"
+					tag: {
+						Damage: 0
+						"double/basic_hammer_left_material": "basic_hammer/oak"
+						"double/basic_hammer_right_material": "basic_hammer/oak"
+						"double/basic_handle_material": "basic_handle/stick"
+						"double/handle": "double/basic_handle"
+						"double/head_left": "double/basic_hammer_left"
+						"double/head_right": "double/basic_hammer_right"
+						id: "c0352c44-63b6-418e-9a8b-5abbdabf5b98"
+					}
+				}
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.tetra.quest1.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2FB20A6A0C2938F4"]
+			icon: "tetra:basic_workbench"
+			id: "3BF72E41C1203551"
+			subtitle: "{ftbquests.chapter.tetra.quest2.subtitle}"
+			tasks: [{
+				id: "5356F6870A086F6E"
+				title: "{ftbquests.chapter.tetra.quest2.task.title1}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.tetra.quest2.title}"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			id: "72A10FB317A6D183"
+			subtitle: "{ftbquests.chapter.tetra.quest3.subtitle}"
+			tasks: [{
+				id: "56E8A1453A1ED100"
+				title: "{ftbquests.chapter.tetra.quest3.task.title1}"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3BF72E41C1203551"]
+			id: "6B4CCB317BD73826"
+			subtitle: "{ftbquests.chapter.tetra.quest4.subtitle}"
+			tasks: [{
+				id: "04588F49E37FD29B"
+				item: "tetra:geode"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"6B4CCB317BD73826"
+				"2332D134B96A8627"
+			]
+			id: "28439DE48483AC8A"
+			tasks: [{
+				id: "5DD102F9EE3900EF"
+				item: "tetra:pristine_lapis"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"6B4CCB317BD73826"
+				"2332D134B96A8627"
+			]
+			id: "6A09AD492D8B1017"
+			tasks: [{
+				id: "466E05BD5FF2D39A"
+				item: "tetra:pristine_emerald"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"6B4CCB317BD73826"
+				"2332D134B96A8627"
+			]
+			id: "39C153AF6CBE1C83"
+			tasks: [{
+				id: "5BA6E9A1B63586C9"
+				item: "tetra:pristine_diamond"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			id: "2332D134B96A8627"
+			subtitle: "{ftbquests.chapter.tetra.quest8.subtitle}"
+			tasks: [{
+				id: "5B8A5BDECFF3AC38"
+				title: "{ftbquests.chapter.tetra.quest8.task.title1}"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"3BF72E41C1203551"
+				"1574C6C4E9FE38DF"
+			]
+			id: "60B34B3BFFC955B6"
+			subtitle: "{ftbquests.chapter.tetra.quest9.subtitle}"
+			tasks: [{
+				id: "56E4A8C2B91AA611"
+				item: "minecraft:oak_planks"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60B34B3BFFC955B6"]
+			id: "1E1177D7503A793D"
+			tasks: [{
+				id: "790BD2401B861A59"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E1177D7503A793D"]
+			id: "35A850AFAF012C22"
+			tasks: [{
+				id: "6976C67D4BD3B72C"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["35A850AFAF012C22"]
+			id: "66E67E080A64007F"
+			tasks: [{
+				id: "42C29E33330A828B"
+				item: "minecraft:blackstone"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0957E307997B3D33"]
+			id: "049AD572CA837A94"
+			tasks: [{
+				id: "2C0A14B0C065C683"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 0.0d
+		}
+		{
+			description: ["{ftbquests.chapter.tetra.quest14.description1}"]
+			id: "1574C6C4E9FE38DF"
+			subtitle: "{ftbquests.chapter.tetra.quest14.subtitle}"
+			tasks: [{
+				id: "382D915F144FE191"
+				title: "{ftbquests.chapter.tetra.quest14.task.title1}"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"66E67E080A64007F"
+				"3B75FECDA06E51FB"
+				"4EFA9FA6A94ED6FC"
+			]
+			description: [
+				"{ftbquests.chapter.tetra.quest15.description1}"
+				"{ftbquests.chapter.tetra.quest15.description2}"
+			]
+			icon: "tetra:hammer_base"
+			id: "0957E307997B3D33"
+			subtitle: "{ftbquests.chapter.tetra.quest15.subtitle}"
+			tasks: [
+				{
+					id: "66AA92B75E0E3B8F"
+					item: "tetra:hammer_base"
+					type: "item"
+				}
+				{
+					id: "10261834469F3BDE"
+					item: "tetra:forged_workbench"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.tetra.quest15.title}"
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0957E307997B3D33"]
+			id: "33A9EA4B13BF82A9"
+			tasks: [{
+				id: "77F5F2FAB5A43467"
+				item: "tetra:vent_plate"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 1.5d
+		}
+		{
+			id: "4F38C6AD04D13750"
+			tasks: [{
+				id: "65C5652A567728C0"
+				item: "tetra:stonecutter"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0957E307997B3D33"]
+			id: "07475F09F88D9016"
+			tasks: [{
+				id: "4722F18F1D32FBEA"
+				item: "tetra:combustion_chamber"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 1.5d
+		}
+		{
+			id: "016A59247254E21F"
+			tasks: [{
+				id: "2D6058E1CF92913E"
+				item: "tetra:earthpiercer"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0957E307997B3D33"]
+			id: "1ED376B4568D9342"
+			tasks: [{
+				id: "277783800546E99B"
+				item: "tetra:planar_stabilizer"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0957E307997B3D33"]
+			id: "61E69BA2661E2A0A"
+			tasks: [{
+				id: "0CDBCDEDA0DC7E53"
+				item: "tetra:lubricant_dispenser"
+				type: "item"
+			}]
+			x: 16.5d
+			y: 1.5d
+		}
+		{
+			id: "5077F8D9394C4E23"
+			tasks: [{
+				id: "2E001DA8CD42E03C"
+				item: "tetra:quick_latch"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2FB20A6A0C2938F4"]
+			icon: {
+				Count: 1
+				id: "tetra:holo"
+				tag: {
+					"holo/core": "holo/core"
+					"holo/core_material": "frame/dim"
+					"holo/frame": "holo/frame"
+					"holo/frame_material": "core/ancient"
+					"holo/repo": "holo/repo"
+					"holo/repo_material": "repo/default"
+					"holo/scanner": "holo/scanner"
+					"holo/scanner_material": "scanner/default"
+				}
+			}
+			id: "3301606D1F925E64"
+			subtitle: "{ftbquests.chapter.tetra.quest23.subtitle}"
+			tasks: [{
+				id: "09F47605F12B8E47"
+				title: "{ftbquests.chapter.tetra.quest23.task.title1}"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			id: "3B75FECDA06E51FB"
+			tasks: [{
+				id: "093FA5E8A350EED8"
+				title: "{ftbquests.chapter.tetra.quest24.task.title1}"
+				type: "checkmark"
+			}]
+			x: 14.0d
+			y: -2.0d
+		}
+		{
+			id: "4EFA9FA6A94ED6FC"
+			tasks: [{
+				id: "6F658FF3A052D0A1"
+				item: {
+					Count: 1
+					id: "tetra:thermal_cell"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["049AD572CA837A94"]
+			id: "56951FE92E2C9DF9"
+			tasks: [{
+				id: "2090486C507A670F"
+				title: "{ftbquests.chapter.tetra.quest26.task.title1}"
+				type: "checkmark"
+			}]
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3BF72E41C1203551"]
+			description: ["{ftbquests.chapter.tetra.quest27.description1}"]
+			id: "2D7FE3BAA95EA7A4"
+			subtitle: "{ftbquests.chapter.tetra.quest27.subtitle}"
+			tasks: [{
+				id: "64D26D52517FB199"
+				item: {
+					Count: 1
+					id: "tetra:modular_toolbelt"
+					tag: {
+						id: "56090a66-f2c7-482e-9455-29565687775a"
+						"toolbelt/belt": "toolbelt/belt"
+						"toolbelt/belt_material": "belt/rope"
+						"toolbelt/slot1": "toolbelt/strap_slot1"
+						"toolbelt/strap_slot1_material": "strap1/leather"
+					}
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2332D134B96A8627"]
+			id: "01748B06B2F3C19F"
+			tasks: [{
+				id: "503A67DC7855EB15"
+				item: "tetra:pristine_amethyst"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -9.0d
+		}
+	]
+	title: "{ftbquests.chapter.tetra.title}"
+}

@@ -6,7 +6,574 @@
 	icon: "gtceu:uv_machine_hull"
 	id: "4648FB3FBB9F74B3"
 	order_index: 7
-	quest_links: [ ]
-	quests: [ ]
-	title: "&3UV&r时期"
+	quest_links: [
+		{
+			id: "30A476A362D84487"
+			linked_quest: "7FD9B0E41358497D"
+			shape: "gear"
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			id: "1E89B8AB6D106F05"
+			linked_quest: "7F0C67AE534020B1"
+			x: 2.0d
+			y: -3.5d
+		}
+		{
+			id: "00B5D11AA16DE9D2"
+			linked_quest: "74E26D593C100718"
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			id: "056A00C408ADC615"
+			linked_quest: "7D527B8CCB41E418"
+			x: 4.0d
+			y: -5.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: [
+				"7FD9B0E41358497D"
+				"2F0AFEF0F176A92F"
+			]
+			id: "38559FFEC45C6B03"
+			tasks: [{
+				id: "14ADC48FAE170E25"
+				item: "gtceu:uv_machine_hull"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			id: "2F0AFEF0F176A92F"
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "602F32A0018A2640"
+				item: "gtceu:yttrium_barium_cuprate_ingot"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["38559FFEC45C6B03"]
+			id: "0C3AB83D2762EC3D"
+			tasks: [{
+				id: "182F2580D81C384D"
+				item: "gtceu:uv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["38559FFEC45C6B03"]
+			id: "4A1F708FDEEA50D2"
+			tasks: [{
+				id: "557D1FEA727BC42A"
+				item: "gtceu:uv_energy_output_hatch"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4A1F708FDEEA50D2"]
+			id: "674C9A48676C71F5"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "{ftbquests.chapter.uv.quest5.subtitle}"
+			tasks: [{
+				id: "45B10996F96EC19D"
+				item: "ctnhcore:naq_reactor_mk1"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"0C3AB83D2762EC3D"
+				"7F0C67AE534020B1"
+				"74E26D593C100718"
+				"7D527B8CCB41E418"
+			]
+			id: "633B6EC62B49755E"
+			tasks: [{
+				id: "07D4BEA216765482"
+				item: "gtceu:uv_fusion_reactor"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"1833231DA6DC3D77"
+				"18E2A4593690B3D1"
+				"619F43DB0B07651E"
+				"7A71908F8897D99E"
+			]
+			id: "69967649B8FB901C"
+			tasks: [{
+				id: "49CE237B12E3E1C4"
+				item: "ctnhcore:uv_compressed_fusion_reactor"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["633B6EC62B49755E"]
+			id: "619F43DB0B07651E"
+			tasks: [{
+				id: "3BABFD3517052E8F"
+				item: "gtceu:iron_plasma_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["633B6EC62B49755E"]
+			id: "1833231DA6DC3D77"
+			tasks: [{
+				id: "3F8FA4F5CAC512CA"
+				item: "gtceu:nickel_plasma_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["633B6EC62B49755E"]
+			id: "18E2A4593690B3D1"
+			tasks: [{
+				id: "30EE8C597E5C02CB"
+				item: "gtceu:neutronium_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -9.5d
+		}
+		{
+			id: "7A71908F8897D99E"
+			tasks: [{
+				id: "474F6A8335C66DF3"
+				title: "{ftbquests.chapter.uv.quest11.task.title1}"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -13.0d
+		}
+		{
+			dependencies: [
+				"1833231DA6DC3D77"
+				"619F43DB0B07651E"
+			]
+			id: "628F4826B5F6AC41"
+			subtitle: "{ftbquests.chapter.uv.quest12.subtitle}"
+			tasks: [{
+				id: "3BBE2FA962B1B2F2"
+				title: "{ftbquests.chapter.uv.quest12.task.title1}"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -8.5d
+		}
+		{
+			id: "04A3089CEEAE9986"
+			tasks: [{
+				id: "1D00BB5907DAA0E4"
+				item: "gtceu:bedrock_smoke_re_l_bucket"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -13.0d
+		}
+		{
+			id: "237F84ED2C5EF2EF"
+			tasks: [{
+				id: "5360029A6EE07FE0"
+				item: "gtceu:bedrock_smoke_re_m_bucket"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -11.5d
+		}
+		{
+			id: "04FD8D001617E691"
+			tasks: [{
+				id: "6E0F60CA942AE3D3"
+				item: "gtceu:bedrock_smoke_re_h_bucket"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["04A3089CEEAE9986"]
+			id: "2F9F236DB91E21EB"
+			tasks: [{
+				id: "59165C9CFE776A45"
+				item: "gtceu:nq_fuelmk1_bucket"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["237F84ED2C5EF2EF"]
+			id: "34F957A3E8E7D3FF"
+			tasks: [{
+				id: "360AFAE7891B1424"
+				item: "gtceu:nq_fuelmk2_bucket"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["04FD8D001617E691"]
+			id: "45A565804AFD4ABD"
+			tasks: [{
+				id: "25061AA1FB7F446E"
+				item: "gtceu:nq_fuelmk3_bucket"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"237F84ED2C5EF2EF"
+				"04A3089CEEAE9986"
+				"04FD8D001617E691"
+			]
+			id: "71CEB2AFBDDE7B31"
+			tasks: [{
+				id: "709E7379F28B1AB9"
+				item: "gtceu:ax_jiyanqi_bucket"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["71CEB2AFBDDE7B31"]
+			id: "0C8A3A38C8A69F95"
+			tasks: [{
+				id: "5C7AEB6CCAB8FBF8"
+				item: "gtceu:bedrock_gas_bucket"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -11.5d
+		}
+		{
+			dependencies: [
+				"71CEB2AFBDDE7B31"
+				"4E5E3B834FAA8C67"
+			]
+			dependency_requirement: "one_completed"
+			id: "736613239A0FDD32"
+			tasks: [{
+				id: "7373079B4D3DB9E6"
+				item: "gtceu:radioactive_metals_mix_dust"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["0C8A3A38C8A69F95"]
+			id: "4E5E3B834FAA8C67"
+			tasks: [{
+				id: "698BB6EEFE70088E"
+				item: "gtceu:bedrock_gas_re_bucket"
+				type: "item"
+			}]
+			x: 19.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["4E5E3B834FAA8C67"]
+			id: "62C818606820AC3A"
+			subtitle: "{ftbquests.chapter.uv.quest23.subtitle}"
+			tasks: [{
+				id: "65A07E985B66B699"
+				item: "gtceu:dr_bedrock_gas_re_bucket"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -13.0d
+		}
+		{
+			id: "79FF9CC1122C2362"
+			tasks: [
+				{
+					id: "1143DB72F6754EC9"
+					item: "gtceu:uranium_235_dust"
+					type: "item"
+				}
+				{
+					id: "470ED1315DB370DF"
+					item: "gtceu:plutonium_241_dust"
+					type: "item"
+				}
+			]
+			title: "放射性物质"
+			x: 13.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"79FF9CC1122C2362"
+				"736613239A0FDD32"
+			]
+			id: "20538FF9D09E4A55"
+			tasks: [{
+				id: "17066A5D717349AA"
+				item: "gtceu:enrich_radioactive_waste_dust"
+				type: "item"
+			}]
+			x: 14.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["20538FF9D09E4A55"]
+			id: "799170F56DEEA43F"
+			tasks: [{
+				id: "618902A3F5A047AF"
+				item: "gtceu:radioactive_ion_solution_bucket"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["799170F56DEEA43F"]
+			id: "109A8810A3C205AB"
+			tasks: [{
+				id: "62FB5785B1C372E4"
+				item: "gtceu:neutron_irradiation_of_radioactive_waste_bucket"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["109A8810A3C205AB"]
+			id: "7565AACEF5040B8D"
+			tasks: [{
+				id: "0FE2F8513460444D"
+				item: "gtceu:radiation_dust_dust"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"7565AACEF5040B8D"
+				"21768F83603146C0"
+			]
+			id: "6286B016F7A21B39"
+			subtitle: "{ftbquests.chapter.uv.quest29.subtitle}"
+			tasks: [{
+				id: "15A68F85CEBA29F9"
+				item: "gtceu:radioactive_metal_ingot_ingot"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6286B016F7A21B39"]
+			id: "516FF6C64567223F"
+			tasks: [{
+				id: "6B5B2ED54030D4B0"
+				item: "gtceu:low_level_radioactive_dust_bucket"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6286B016F7A21B39"]
+			id: "6A6ABE5772951DB4"
+			tasks: [{
+				id: "60AC5FD1474505E7"
+				item: "gtceu:high_level_radioactive_dust_bucket"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["516FF6C64567223F"]
+			id: "239256DEE547E22D"
+			tasks: [{
+				id: "1A3432EA34CA16B5"
+				item: "gtceu:concentrated_low_level_radioactive_dust_bucket"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6A6ABE5772951DB4"]
+			id: "49E9D581D9A44DCF"
+			tasks: [{
+				id: "5EDB13733579DF02"
+				item: "gtceu:concentrated_high_level_radioactive_dust_bucket"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"49E9D581D9A44DCF"
+				"239256DEE547E22D"
+			]
+			description: ["{ftbquests.chapter.uv.quest34.description1}"]
+			id: "331F72B7D40A7538"
+			subtitle: "{ftbquests.chapter.uv.quest34.subtitle}"
+			tasks: [{
+				id: "040D2994DEAAE849"
+				item: "gtceu:aether_plasma_bucket"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["331F72B7D40A7538"]
+			id: "782DCCEF9924E406"
+			tasks: [{
+				id: "73F5679696102B8F"
+				item: "gtceu:aether_bucket"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["782DCCEF9924E406"]
+			id: "7F81295FE18741A6"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.uv.quest36.subtitle}"
+			tasks: [{
+				id: "6505A75DAEE23A90"
+				item: "gtceu:aether_ingot"
+				type: "item"
+			}]
+			x: 17.0d
+			y: -3.0d
+		}
+		{
+			id: "21768F83603146C0"
+			subtitle: "{ftbquests.chapter.uv.quest37.subtitle}"
+			tasks: [{
+				id: "045B63C91F2AB7C5"
+				item: "ctnhcore:decay_pools_machine"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0C3AB83D2762EC3D"]
+			id: "1BC96CF2C5DB3D12"
+			shape: "circle"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.uv.quest38.subtitle}"
+			tasks: [{
+				id: "3DFC72E59BBA99F7"
+				item: "gtceu:samarium_dysprosium_terbium_permanent_magnet_alloy_ingot"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			id: "2F06653DB4F277D8"
+			tasks: [{
+				id: "29984565570288D2"
+				title: "{ftbquests.chapter.uv.quest39.task.title1}"
+				type: "checkmark"
+			}]
+			x: 14.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["0C3AB83D2762EC3D"]
+			id: "2DBA5445319926BE"
+			shape: "circle"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.uv.quest40.subtitle}"
+			tasks: [{
+				id: "25A8BD7CF4103101"
+				item: "gtceu:abyssalalloy_ingot"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2DBA5445319926BE"]
+			id: "0C5E045DBD9D132E"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.uv.quest41.subtitle}"
+			tasks: [{
+				id: "7FDBB66A6463D160"
+				item: "ctnhcore:abyssalalloy_coil_block"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7F81295FE18741A6"]
+			description: [
+				"需要交替输入烈焰之炽焱和极寒之凛冰"
+				"且温度在25000K时会强制停机，会消耗大量的极寒之凛冰来降温且没有产物。"
+			]
+			id: "50B3C9E6ECB749A2"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "凭空产生，梦里才会有的东西吧？"
+			tasks: [{
+				id: "5C64C7AB92A674C4"
+				item: "ctnhcore:void_miner"
+				type: "item"
+			}]
+			x: 20.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"34F957A3E8E7D3FF"
+				"45A565804AFD4ABD"
+				"2F9F236DB91E21EB"
+			]
+			id: "59F93AD126E45FED"
+			tasks: [{
+				id: "377628159C116ECD"
+				title: "开始你的硅岩燃料吧"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: -11.5d
+		}
+	]
+	title: "{ftbquests.chapter.uv.title}"
 }

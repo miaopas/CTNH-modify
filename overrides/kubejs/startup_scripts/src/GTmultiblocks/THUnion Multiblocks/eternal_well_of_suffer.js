@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
      * @type {Internal.CustomMultiblockBuilder}
      */
     let builder=event.create('eternal_well_of_suffer', 'multiblock')
-    for(let i=0;i<=7;i++) builder.tooltips(Component.translatable(`ctnh.${builder.id}.${i}`));
+    for(let i=0;i<=8;i++) builder.tooltips(Component.translatable(`ctnh.${builder.id}.${i}`));
     builder.rotationState(RotationState.NON_Y_AXIS)
 
         .recipeTypes([GTRecipeTypes.get('digital_well_of_suffer')])
@@ -13,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             false
         )
 		.recipeModifiers([
-			(/** @type {Internal.IMultiController} */ machine,/** @type {Internal.GTRecipe} */ recipe,params,result)=>{
+			(/** @type {Internal.IMultiController} */ machine,/** @type {Internal.GTRecipe} */ recipe)=>{
 				recipe=GTRecipeModifiers.accurateParallel(machine, recipe, 2147483647, false).getFirst();
 
 				var multiplier=1;
@@ -50,7 +50,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
 
 
 				
-				return modifyRecipe(recipe,$GTRecipeCapabilities.FLUID, $ContentModifier.multiplier(multiplier),false,false);
+				return (recipe) => modifyRecipe(recipe,$GTRecipeCapabilities.FLUID, $ContentModifier.multiplier(multiplier),false,false);
             }
 		])
 		
