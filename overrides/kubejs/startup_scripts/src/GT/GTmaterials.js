@@ -1521,8 +1521,8 @@ StartupEvents.postInit(event => {
     TagPrefix.ingot.setIgnored(GTMaterials.get("alfsteel"), "mythicbotany:alfsteel_ingot")
     TagPrefix.nugget.setIgnored(GTMaterials.get("alfsteel"), "mythicbotany:alfsteel_nugget")
     TagPrefix.block.setIgnored(GTMaterials.get("alfsteel"), "mythicbotany:alfsteel_block")
-    TagPrefix.ingot.setIgnored(GTMaterials.get("ignitium"), "cataclysm:ignitium_ingot")
-    TagPrefix.block.setIgnored(GTMaterials.get("ignitium"), "cataclysm:ignitium_block")
+    // TagPrefix.ingot.setIgnored(GTMaterials.get("ignitium"), "cataclysm:ignitium_ingot")
+    // TagPrefix.block.setIgnored(GTMaterials.get("ignitium"), "cataclysm:ignitium_block")
     TagPrefix.gem.setIgnored(GTMaterials.CertusQuartz, 'ae2:certus_quartz_crystal')
     TagPrefix.block.setIgnored(GTMaterials.CertusQuartz, 'ae2:quartz_block')
 
