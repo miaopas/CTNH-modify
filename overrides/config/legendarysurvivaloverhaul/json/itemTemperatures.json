@@ -11,12 +11,7 @@
     "cold_resistance": 0.0,
     "thermal_resistance": 0.0
   },
-  "cataclysm:bloom_stone_pauldrons": {
-    "temperature": 0.0,
-    "heat_resistance": 1.0,
-    "cold_resistance": 0.0,
-    "thermal_resistance": 0.0
-  },
+  
   "minecraft:leather_chestplate": {
     "temperature": 0.0,
     "heat_resistance": 0.0,
@@ -29,12 +24,7 @@
     "cold_resistance": 0.0,
     "thermal_resistance": 0.0
   },
-  "cataclysm:monstrous_helm": {
-    "temperature": 0.0,
-    "heat_resistance": 0.0,
-    "cold_resistance": 1.0,
-    "thermal_resistance": 0.0
-  },
+
   "minecraft:leather_leggings": {
     "temperature": 0.0,
     "heat_resistance": 0.0,
@@ -77,12 +67,7 @@
     "cold_resistance": 3.0,
     "thermal_resistance": 0.0
   },
-  "cataclysm:ignitium_leggings": {
-    "temperature": 0.0,
-    "heat_resistance": 0.0,
-    "cold_resistance": 2.0,
-    "thermal_resistance": 0.0
-  },
+
   "minecraft:iron_helmet": {
     "temperature": 0.0,
     "heat_resistance": 0.5,
@@ -113,12 +98,7 @@
     "cold_resistance": 0.0,
     "thermal_resistance": 0.0
   },
-  "cataclysm:ignitium_chestplate": {
-    "temperature": 0.0,
-    "heat_resistance": 0.0,
-    "cold_resistance": 3.0,
-    "thermal_resistance": 0.0
-  },
+ 
   "minecraft:torch": {
     "temperature": 1.0,
     "heat_resistance": 0.0,
@@ -179,24 +159,14 @@
     "cold_resistance": 0.0,
     "thermal_resistance": 0.0
   },
-  "cataclysm:ignitium_boots": {
-    "temperature": 0.0,
-    "heat_resistance": 0.0,
-    "cold_resistance": 1.5,
-    "thermal_resistance": 0.0
-  },
+
   "minecraft:netherite_boots": {
     "temperature": 0.0,
     "heat_resistance": 0.0,
     "cold_resistance": 1.5,
     "thermal_resistance": 0.0
   },
-  "cataclysm:bone_reptile_chestplate": {
-    "temperature": 0.0,
-    "heat_resistance": 0.0,
-    "cold_resistance": 2.0,
-    "thermal_resistance": 0.0
-  },
+
   "legendarysurvivaloverhaul:desert_chestplate": {
     "temperature": 0.0,
     "heat_resistance": 3.0,
@@ -215,12 +185,7 @@
     "cold_resistance": 0.0,
     "thermal_resistance": 0.0
   },
-  "cataclysm:bone_reptile_helmet": {
-    "temperature": 0.0,
-    "heat_resistance": 0.0,
-    "cold_resistance": 1.5,
-    "thermal_resistance": 0.0
-  },
+ 
   "legendarysurvivaloverhaul:nether_chalice": {
     "temperature": 2.0,
     "heat_resistance": 0.0,
@@ -257,12 +222,7 @@
     "cold_resistance": 0.0,
     "thermal_resistance": 0.0
   },
-  "cataclysm:ignitium_helmet": {
-    "temperature": 0.0,
-    "heat_resistance": 0.0,
-    "cold_resistance": 1.5,
-    "thermal_resistance": 0.0
-  },
+
   "minecraft:golden_chestplate": {
     "temperature": 0.0,
     "heat_resistance": 0.0,
@@ -275,12 +235,7 @@
     "cold_resistance": 0.5,
     "thermal_resistance": 0.0
   },
-  "cataclysm:ignitium_elytra_chestplate": {
-    "temperature": 0.0,
-    "heat_resistance": 0.0,
-    "cold_resistance": 3.0,
-    "thermal_resistance": 0.0
-  },
+  
   "minecraft:packed_ice": {
     "temperature": -2.0,
     "heat_resistance": 0.0,

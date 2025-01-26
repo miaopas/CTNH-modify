@@ -20,7 +20,11 @@ Ponder.registry(event=>{
                 scene.text(60,'First, place the central rune holder',[4,1.5,4]).attachKeyFrame()
                 scene.idle(70)
 
-                let holder = [[1,1,4],[3,1,2],[3,1,6],[5,1,2],[5,1,6],[7,1,4]]
+                // let holder = [[1,1,4],[3,1,2],[3,1,6],[5,1,2],[5,1,6],[7,1,4]]
+                let holder = [[1,1,4],[3,1,6],[5,1,2],[5,1,6],[7,1,4]]
+                
+
+
                 scene.text(60,'Then place other rune holder at the position you see in the jei').attachKeyFrame()
                 holder.forEach(pos => {
                     scene.world.showSection(pos,"down")
@@ -41,10 +45,10 @@ Ponder.registry(event=>{
                 scene.world.modifyBlockEntityNBT([1,1,4], nbt=>{
                     nbt.Inventory = {Items:[{Count:1,Slot:0,id:"ars_nouveau:wilden_spike"}],Size:1}
                 })
-                scene.idle(5)
-                scene.world.modifyBlockEntityNBT([3,1,2], nbt=>{
-                    nbt.Inventory = {Items:[{Count:1,Slot:0,id:"cataclysm:athame"}],Size:1}
-                })
+                // scene.idle(5)
+                // scene.world.modifyBlockEntityNBT([3,1,2], nbt=>{
+                //     nbt.Inventory = {Items:[{Count:1,Slot:0,id:"cataclysm:athame"}],Size:1}
+                // })
                 scene.idle(5)
                 scene.world.modifyBlockEntityNBT([3,1,6], nbt=>{
                     nbt.Inventory = {Items:[{Count:1,Slot:0,id:"gtceu:rose_gold_knife"}],Size:1}

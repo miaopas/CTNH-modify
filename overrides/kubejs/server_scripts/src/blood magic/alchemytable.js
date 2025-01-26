@@ -189,9 +189,9 @@ ServerEvents.recipes(event => {
             "input": [{
                     "item": "sophisticatedbackpacks:void_upgrade"
                 },
-                {
-                    "item": "cataclysm:void_eye"
-                },
+                // {
+                //     "item": "cataclysm:void_eye"
+                // },
                 {
                     "item": "ae2:void_card"
                 },

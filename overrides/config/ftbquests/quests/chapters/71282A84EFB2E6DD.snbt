@@ -1073,17 +1073,6 @@
 			x: -3.0d
 			y: 15.5d
 		}
-		{
-			id: "42F7EB2A3B7E87B4"
-			subtitle: "{ftbquests.chapter.71282A84EFB2E6DD.quest77.subtitle}"
-			tasks: [{
-				id: "27699E7170426E7C"
-				item: "cataclysm:void_stone"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 14.0d
-		}
 	]
 	title: "{ftbquests.chapter.71282A84EFB2E6DD.title}"
 }

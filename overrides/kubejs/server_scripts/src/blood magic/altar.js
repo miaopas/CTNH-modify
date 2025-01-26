@@ -101,14 +101,14 @@ ServerEvents.recipes(event => {
         "x": 3,
         "z": 0
       },
-      {
-        "consume": true,
-        "rune": {
-          "item": "cataclysm:athame"
-        },
-        "x": 1,
-        "z": -2
-      }
+      // {
+      //   "consume": true,
+      //   "rune": {
+      //     "item": "cataclysm:athame"
+      //   },
+      //   "x": 1,
+      //   "z": -2
+      // }
     ],
     "special_input": "mythicbotany:wandering_trader",
     "ticks": 200

@@ -216,10 +216,6 @@ key_fpsreducer.key.openGui:key.keyboard.end
 key_fpsreducer.key.forceIdle:key.keyboard.pause
 key_key.carry.desc:key.keyboard.left.shift
 key_key.autofish.open_gui:key.keyboard.v
-key_key.cataclysm.ability:key.keyboard.x
-key_key.cataclysm.helmet_ability:key.keyboard.c
-key_key.cataclysm.chestplate_ability:key.keyboard.y
-key_key.cataclysm.boots_ability:key.keyboard.v
 key_key.legendarysurvivaloverhaul.added_desc:key.keyboard.left.shift
 key_key.legendarysurvivaloverhaul.body_health:key.keyboard.h
 key_key.curios.open.desc:key.keyboard.unknown
