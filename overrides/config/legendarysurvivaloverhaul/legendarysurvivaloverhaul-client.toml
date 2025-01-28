@@ -16,7 +16,7 @@
 		#    SYMBOL - Display the player's current temperature as a symbol above the hotbar.
 		#    NONE - Disable the temperature indicator.
 		#Allowed Values: SYMBOL, NONE
-		"Temperature Display Mode" = "SYMBOL"
+		"Temperature Display Mode" = "NONE"
 		# The X and Y offset of the temperature indicator. Set both to 0 for no offset.
 		#Range: -10000 ~ 10000
 		"Temperature Display X Offset" = 0
