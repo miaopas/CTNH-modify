@@ -186,13 +186,6 @@
 		{
 			dependencies: ["1162E347E7C00175"]
 			id: "1E11A492F4576DBA"
-			rewards: [{
-				command: "/gamephase add @p nether"
-				elevate_perms: true
-				id: "73102DDDEA76B9E4"
-				title: "{ftbquests.chapter.08AF6857D150C353.quest11.reward.title1}"
-				type: "command"
-			}]
 			tasks: [{
 				id: "1BF05068C4319343"
 				item: {

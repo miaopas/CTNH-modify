@@ -363,12 +363,6 @@
 					table_id: 5863108397808417557L
 					type: "random"
 				}
-				{
-					command: "/gamephase add @p end"
-					elevate_perms: true
-					id: "345886DE08824767"
-					type: "command"
-				}
 			]
 			tasks: [{
 				id: "7BAD7E832FEF40F0"
@@ -622,12 +616,6 @@
 		{
 			dependencies: ["35FC625257013116"]
 			id: "415AF3F977F4C3F9"
-			rewards: [{
-				command: "/gamephase add @p aether"
-				elevate_perms: true
-				id: "47B4C1C8E27B98A0"
-				type: "command"
-			}]
 			tasks: [{
 				id: "0C901293ECFB769A"
 				item: {
