@@ -202,4 +202,6 @@
 {"fileID":5757540,"projectID":984851,"required":true},
 {"fileID":5607145,"projectID":1077532,"required":true},
 {"fileID":5661407,"projectID":946579,"required":true},
-{"fileID":5841750,"projectID":245755,"required":true}],"manifestType":"minecraftModpack","manifestVersion":1,"minecraft":{"modLoaders":[{"id":"forge-47.3.6","primary":true}],"version":"1.20.1"},"name":"Create:New Horizon","overrides":"overrides","version":"v1.0.9"}
+{"fileID":5841750,"projectID":245755,"required":true},
+{"fileID":4635878,"projectID":232131,"required":true}
+],"manifestType":"minecraftModpack","manifestVersion":1,"minecraft":{"modLoaders":[{"id":"forge-47.3.6","primary":true}],"version":"1.20.1"},"name":"Create:New Horizon","overrides":"overrides","version":"v1.0.9"}
